@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background: linear-gradient(45deg,#d2001a,#7462ff);
+    height: 100vh;
+}
 #heading1{
    background-color: black;
    color: white;
@@ -13,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 2.5rem;
     margin-top: 5.5rem;
 }
 .choice{
@@ -54,4 +58,31 @@ img{
     background-color: black;
     padding: 14px;
     border-radius: 7px;
+}
+@media(max-width:676px){
+    body{
+        overflow: hidden;
+        color: white;
+        font-weight: bold;
+    }
+    #heading1{
+      font-size: 2.5rem;
+      height: 3rem
+    }
+    img{
+        height: 6rem;
+        width: 6rem;
+    }
+    .choice{
+        height: 6rem;
+        width: 6rem;
+       border-radius: 5%;
+    }
+    .count{
+        font-size: 1.5rem;
+       
+    }
+    .score{
+        font-size: 0.8rem;
+    }
 }
